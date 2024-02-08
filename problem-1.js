@@ -1,7 +1,7 @@
 function calculateMoney(Sells) {
 
     if (typeof Sells !== "number" || Sells >= 0  === false) {
-        return "Baker Vai it's a Invalid Number"
+        return "Invalid Number";
     }
 
     const ticketPrice = 120;

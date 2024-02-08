@@ -20,41 +20,10 @@
 
 
 
-//problem 2
-
-function checkName(name){
-    if(typeof name !== "string"){
-        return "invalid";
-    }
-    const Index = name.slice(-1).toLowerCase();
-    const chars = ["a", "y", "i", "e", "o", "u", "w"];
-    if(chars.includes(Index)){
-        return "good name";
-    }
-    else{
-        return "bad name";
-    }
-}
-console.log(checkName("sojib"))
-
-
-// function checkName(yourname) {
-//     const letter = ["a", "y", "i", "e", "o", "u", "w"];
-    
-// }
-
-
-let shfd = "shihab";
-let ssds = shfd.slice(-1);
-console.log(ssds)
-
-
-
-
 // four.............
 // function password(isData) {
 
-    
+
 //     // if (isData.birthYear.length !== 3) {
 //     //     return "invalid"
 //     // }
@@ -66,10 +35,41 @@ console.log(ssds)
 //     let webName = isData.siteName;
 //     const websiteName =  webName.charAt(0).toUpperCase() + webName.slice(1)
 //     const result = websiteName + "#" + name + "@" + string;
-//     return result ; 
+//     return result ;
 // }
 // let inpuisDataect = {name:"sojib" , birthYear: 1720, siteName: "facebook" ,}
 // console.log(password(inpuisDataect));
 
 
+
+// problem number  3 virus delete
+
+// function deleteInvalids(receivedData) {
+//     let newarray = [];
+//     //let new = received;
+//     for (const received of receivedData) {
+//         if (received === "Number") {
+//             newarray.push(received)
+//         }
+//     }
+//     return newarray;
+// }
+// const setData = deleteInvalids([ 1, 12, 0, -1,]);
+// console.log(setData); 
+
+
+function deleteInvalids(receivedData) {
+    let ssss = [];
+    for (const received of receivedData) {
+        if (typeof received === "number") {
+            if (isNaN(received) === false) {
+                ssss.push(received);
+            }
+            
+        }
+    }
+    return ssss;
+}
+const setData = deleteInvalids([1 , null, undefined, 18, -19, NaN, "12", [1, 2], { ob: "lala" }] );
+console.log(setData); 
 
