@@ -47,3 +47,19 @@ function deleteInvalids(receivedData) {
     }
     return myNewArray;
 }
+
+
+// porblem 4
+
+function password(isData) {
+
+    const name = isData.name;
+    const birthYear = isData.birthYear;
+    const string = "" + birthYear;
+
+    let webName = isData.siteName;
+    const websiteName =  webName.charAt(0).toUpperCase() + webName.slice(1)
+    const result = websiteName + "#" + name + "@" + string;
+    return result ;
+    
+}
