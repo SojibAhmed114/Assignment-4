@@ -2,7 +2,7 @@ function password(isData) {
 
     // if (isData.siteName === 0 || isData.name === 0 ||   isData.birthYear === 0 || isData.birthYear.length !== 4) {
     //     return "invalid";
-    // }   // bonar part kaj korte partchi na.
+    // }   // bonus part kaj korte partchi na.
 
     const name = isData.name;
     const birthYear = isData.birthYear;
