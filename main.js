@@ -20,26 +20,56 @@
 
 
 
+//problem 2
+
+function checkName(name){
+    if(typeof name !== "string"){
+        return "invalid";
+    }
+    const Index = name.slice(-1).toLowerCase();
+    const chars = ["a", "y", "i", "e", "o", "u", "w"];
+    if(chars.includes(Index)){
+        return "good name";
+    }
+    else{
+        return "bad name";
+    }
+}
+console.log(checkName("sojib"))
+
+
+// function checkName(yourname) {
+//     const letter = ["a", "y", "i", "e", "o", "u", "w"];
+    
+// }
+
+
+let shfd = "shihab";
+let ssds = shfd.slice(-1);
+console.log(ssds)
+
+
+
+
 // four.............
-function password(isData) {
+// function password(isData) {
 
     
-    // if (isData.birthYear.length !== 3) {
-    //     return "invalid"
-    // }
+//     // if (isData.birthYear.length !== 3) {
+//     //     return "invalid"
+//     // }
 
-    const name = isData.name;
-    const birthYear = isData.birthYear;
-    const string = "" + birthYear;
+//     const name = isData.name;
+//     const birthYear = isData.birthYear;
+//     const string = "" + birthYear;
 
-    let webName = isData.siteName;
-    const websiteName =  webName.charAt(0).toUpperCase() + webName.slice(1)
-    const result = websiteName + "#" + name + "@" + string;
-    return result ; 
-}
-let inpuisDataect = {name:"sojib" , birthYear: 1720, siteName: "facebook" ,}
-console.log(password(inpuisDataect));
+//     let webName = isData.siteName;
+//     const websiteName =  webName.charAt(0).toUpperCase() + webName.slice(1)
+//     const result = websiteName + "#" + name + "@" + string;
+//     return result ; 
+// }
+// let inpuisDataect = {name:"sojib" , birthYear: 1720, siteName: "facebook" ,}
+// console.log(password(inpuisDataect));
 
-// || isData.birthYear.length !== 4
 
 
