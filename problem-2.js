@@ -11,4 +11,4 @@ function checkName(yourName){
         return "Bad Name";
     }
 }
-console.log(checkName("sojib"));
+console.log(checkName(["sojib ahmed safi"]));

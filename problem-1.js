@@ -15,5 +15,5 @@ function calculateMoney(Sells) {
     return result;
 }
 
-let input = calculateMoney(100);
+let input = calculateMoney(-500);
 console.log(input);

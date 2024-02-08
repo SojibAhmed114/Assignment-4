@@ -1,14 +1,21 @@
 function deleteInvalids(receivedData) {
-    let ssss = [];
+
+    if (Array.isArray(receivedData) === false) {
+        return "Invalid Array";
+    }
+
+    let myNewArray = [];
     for (const received of receivedData) {
         if (typeof received === "number") {
             if (isNaN(received) === false) {
-                ssss.push(received);
-            }
-            
+                myNewArray.push(received);
+            }          
         }
     }
-    return ssss;
+    return myNewArray;
 }
-const setData = deleteInvalids([1 , null, undefined, 18, -19, NaN, "12", [1, 2], { ob: "lala" }] );
+
+
+const setData = deleteInvalids( ["sojib", NaN, 1520]  );
 console.log(setData); 
+
